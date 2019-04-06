@@ -1,7 +1,10 @@
 {
   "name": "tomato-time",
   "nativescript": {
-    "id": "org.nativescript.tomatotime"
+    "id": "org.nativescript.tomatotime",
+    "tns-ios": {
+      "version": "5.3.1"
+    }
   },
   "version": "0.0.0",
   "scripts": {
@@ -39,9 +42,9 @@
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~0.11.4",
     "@angular/cli": "^7.2.0",
     "@angular/compiler-cli": "~7.2.0",
-    "@angular-devkit/build-angular": "~0.11.4",
     "@nativescript/schematics": "~0.4.0",
     "@types/jasmine": "2.8.6",
     "@types/jasminewd2": "~2.0.3",
@@ -59,6 +62,7 @@
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "typescript": "~3.1.1"
+    "typescript": "~3.1.1",
+    "webpack-cli": "^3.3.0"
   }
 }
