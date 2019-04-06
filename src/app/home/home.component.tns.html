@@ -1,5 +1,24 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <ActionBar [title]="title"></ActionBar>
-<StackLayout  class="p-20" verticalAlignment="center">
-    <Image src="~/assets/tomato.png"></Image>
-</StackLayout>
+<GridLayout columns="*" rows="*, *, *, *, *">
+  <StackLayout class="tns-count" row="1" col="0">
+    <Label [text]="count"></Label>
+  </StackLayout>
+  <StackLayout class="tns-tomato" row="2" col="0" rowSpan="3">
+    <FlexboxLayout
+      justifyContent="flex-end"
+      width="100%"
+      id="addButtonContainer"
+      left="0"
+    >
+      <Button
+        class="tns-cancel"
+        row="0"
+        col="1"
+        text="+"
+        (tap)="cancelTapped()"
+      ></Button>
+    </FlexboxLayout>
+    <Image src="~/assets/tomato.png" (tap)="tomatoTapped()"></Image>
+  </StackLayout>
+</GridLayout>
